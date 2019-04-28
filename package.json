@@ -11,7 +11,7 @@
     "url" : "https://github.com/bertrandda/gladys-caldav.git"
   },
   "author": "Bertrand d'Aure",
-  "license": "CC-BY-NC-SA-3.0",
+  "license": "MIT",
   "dependencies": {
     "dav": "^1.8.0",
     "ical": "^0.6.0"
