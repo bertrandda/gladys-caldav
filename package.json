@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/bertrandda/gladys-caldav.git"
+  },
   "author": "Bertrand d'Aure",
   "license": "CC-BY-NC-SA-3.0",
   "dependencies": {
