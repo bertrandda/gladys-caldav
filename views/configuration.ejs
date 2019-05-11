@@ -1,0 +1,40 @@
+<script src="/hooks/caldav/js/caldav.controller.js"></script>
+
+<div data-ng-controller="calDavCtrl as vm" ng-init="vm.init()">
+  <div class="box skin-box box-default no-border ng-cloak">
+    <div class="box-header with-border">
+      <h3 class="box-title">CalDAV server settings</h3>
+    </div>
+  </div>
+  <div class="box-body table-responsive">
+    <table class="table table-striped ng-cloak">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th ng-show="vm.service === 'Other'">URL</th>
+          <th>Username</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ng-cloak">
+          <td style="vertical-align:middle">
+            <select ng-model="vm.service" ng-init="vm.service = 'Other'">
+              <option ng-repeat="option in vm.services" value="{{option}}">{{option}}</option>
+            </select>
+          </td>
+          <td style="vertical-align:middle" ng-show="vm.service === 'Other'">
+            <input ng-model="vm.caldavUrl" type="text" class="form-control">
+          </td>
+          <td style="vertical-align:middle">
+            <input ng-model="vm.username" type="text" class="form-control">
+          </td>
+          <td style="vertical-align:middle">
+            <input ng-model="vm.password" type="text" class="form-control">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" ng-click="vm.saveParams()" class="btn btn-primary btn-flat btn-sm" style="margin:8px">Save</button>
+  </div>
+</div>
