@@ -12,19 +12,19 @@ This module allows you to connect Gladys to CalDAV server.
 |---|---|---|---|
 | Gladys CalDAV | 0.1.0 | https://github.com/bertrandda/gladys-caldav | caldav |
 
-- Go to parameters, then tabs "Parameters", and create 3 Params :
-  - **CALDAV_URL** : The CalDAV server URL
+- Reboot Gladys
+
+- Go on caldav module *Configuration* button, then tabs "Configuration", enter your settings :
+  - Your service (*iCloud*, *Other*)
+  - **CALDAV_URL** : Your CalDAV server URL (if ask for your service)
   - **CALDAV_USERNAME** : Your CalDAV username
   - **CALDAV_PASSWORD**: Your CalDAV password
-- Then reboot Gladys
 
-- Try first synchronization, by executing the following script :
+- Save your modifications
 
-```javascript
-gladys.modules.caldav.calendar.sync();
-```
+- Always in module settings, go on Parameters tab and click on *Configuration* to finish configuration
 
-You should see in Gladys your calendar events.
+You should see a success notification and your events in your calendar.
 
 Et voilà !
 
